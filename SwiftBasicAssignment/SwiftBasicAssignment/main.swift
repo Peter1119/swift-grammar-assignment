@@ -29,3 +29,5 @@ calculate(10, b: 20, sum: { a, b in
 /// 필수 문제 3
 print(filterEvenIndexIntElement([1,2,3,4,5]))
 print(filterEvenIndexStringElement(["가", "나", "다", "라", "마"]))
+print(filterEvenIndexElement([1, 2, 3, 4, 5]))
+print(filterEvenIndexElement(["가", "나", "다", "라", "마"]))

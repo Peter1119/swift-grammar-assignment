@@ -28,3 +28,14 @@ func filterEvenIndexStringElement(_ array: [String]) -> [String] {
     }
     return result
 }
+
+// 하나로 대처하는 함수
+func filterEvenIndexElement<T>(_ array: [T]) -> [T] {
+    var result: [T] = []
+    for (offset, element) in array.enumerated() {
+        if offset % 2 == 0 {
+            result.append(element)
+        }
+    }
+    return result
+}
