@@ -17,3 +17,14 @@ func filterEvenIndexIntElement(_ array: [Int]) -> [Int] {
     }
     return result
 }
+
+// 짝수번째 요소 제거 하는 함수 b
+func filterEvenIndexStringElement(_ array: [String]) -> [String] {
+    var result = [String]()
+    for (offset, element) in array.enumerated() {
+        if offset % 2 == 0 {
+            result.append(element)
+        }
+    }
+    return result
+}
