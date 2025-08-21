@@ -13,4 +13,8 @@ public struct Cat: Introducible {
     public init(name: String) {
         self.name = name
     }
+    
+    public func meow() -> String {
+        return "야옹"
+    }
 }

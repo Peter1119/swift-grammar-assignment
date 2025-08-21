@@ -13,4 +13,8 @@ public struct Dog: Introducible {
     public init(name: String) {
         self.name = name
     }
+    
+    public func bark() -> String {
+        return "멍멍"
+    }
 }
