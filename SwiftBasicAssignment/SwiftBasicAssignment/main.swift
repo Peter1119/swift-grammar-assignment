@@ -13,3 +13,18 @@ calculate(10, b: 20, sum: { a, b in
     return "두 수의 합은 \(a + b)입니다."
 })
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/// 필수 문제 3
+print(filterEvenIndexIntElement([1,2,3,4,5]))
