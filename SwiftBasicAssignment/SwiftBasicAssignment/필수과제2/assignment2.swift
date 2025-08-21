@@ -15,5 +15,12 @@ func convertToString() {
 }
 
 
+// 2. 짝수만 [String]로 변환
+func convertEvenToString() {
+    let result = Array(1...10).compactMap { $0 % 2 == 0 ? String($0) : nil }
+    print(result)
+}
+
+
 
 
