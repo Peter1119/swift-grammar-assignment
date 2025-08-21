@@ -39,3 +39,15 @@ func filterEvenIndexElement<T>(_ array: [T]) -> [T] {
     }
     return result
 }
+
+// 하나로 대처하는 함수
+func filterEvenIndexNumericElement<T>(_ array: [T]) -> [T] where T: Numeric {
+    var result: [T] = []
+    for (offset, element) in array.enumerated() {
+        if offset % 2 == 0 {
+            result.append(element)
+        }
+    }
+    return result
+}
+
