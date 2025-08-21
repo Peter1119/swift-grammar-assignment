@@ -14,5 +14,7 @@ calculate(10, b: 20, sum: { a, b in
 })
 
 // 과제 2 확인 코드
-// convertToString()
-// convertEvenToString()
+//convertToString()
+//convertEvenToString()
+//executeMyMap()
+//executeMyMap2()
