@@ -19,7 +19,7 @@ public enum DeliveryError: LocalizedError {
         case .notStarted:
             return "배송이 시작되지 않았습니다."
         case .systemError(let reason):
-            return "시스템 에러가 발생하였습니다.\n 이유: \(reason)"
+            return "시스템 에러가 발생하였습니다.\n\(reason)"
         }
     }
 }
