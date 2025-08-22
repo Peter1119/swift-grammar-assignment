@@ -16,7 +16,6 @@ let sum: (Int, Int) -> String = { a, b in
     }
 }
 
-//
 func calculate(_ a: Int, b: Int, sum: ((Int, Int) -> String)) {
     let _ = sum(a, b)
 }

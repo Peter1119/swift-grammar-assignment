@@ -19,3 +19,8 @@ calculate(10, b: 20, sum: { a, b in
     return "두 수의 합은 \(a + b)입니다."
 })
 
+// 과제 2 확인 코드
+//convertToString()
+//convertEvenToString()
+//executeMyMap()
+//executeMyMap2()
