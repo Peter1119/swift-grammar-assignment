@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum DeliveryStatus {
+public enum DeliveryStatus {
     case notStarted
     case inTransit(daysRemaining: Int)
     case error
