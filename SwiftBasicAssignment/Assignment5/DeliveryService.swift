@@ -29,10 +29,7 @@ extension DeliveryService {
     private func validateAddress(
         _ address: String
     ) throws {
-        if address.isEmpty {
-            throw DeliveryError.invalidAddress
-        } else {
-            return
-        }
+        guard !address.isEmpty else { throw DeliveryError.invalidAddress }
+        return
     }
 }
