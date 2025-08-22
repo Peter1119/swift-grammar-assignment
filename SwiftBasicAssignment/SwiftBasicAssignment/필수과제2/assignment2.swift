@@ -17,13 +17,15 @@ func convertToString() {
 
 // 2. 짝수만 [String]로 변환
 func convertEvenToString() {
-    let result = Array(1...10).compactMap { $0 % 2 == 0 ? String($0) : nil }
+    let result = Array(1...10)
+        .filter { $0 % 2 == 0 }
+        .map { String($0) }
     print(result)
 }
 
 // 고차함수 직접 만들기
-func myMap(_ array: [Int], _ transform: (Int) -> String?) -> [String] {
-    var result: [String] = []
+func myMap<T, U>(_ array: [T], _ transform: (T) -> U?) -> [U] {
+    var result: [U] = []
     for element in array {
         if let transformedValue = transform(element) {
             result.append(transformedValue)
