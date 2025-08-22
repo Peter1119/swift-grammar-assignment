@@ -1,0 +1,53 @@
+//
+//  Assignment3.swift
+//  SwiftBasicAssignment
+//
+//  Created by 홍석현 on 8/21/25.
+//
+
+import Foundation
+
+// 짝수번째 요소 제거 하는 함수 a
+func filterEvenIndexIntElement(_ array: [Int]) -> [Int] {
+    var result = [Int]()
+    for (offset, element) in array.enumerated() {
+        if offset % 2 == 0 {
+            result.append(element)
+        }
+    }
+    return result
+}
+
+// 짝수번째 요소 제거 하는 함수 b
+func filterEvenIndexStringElement(_ array: [String]) -> [String] {
+    var result = [String]()
+    for (offset, element) in array.enumerated() {
+        if offset % 2 == 0 {
+            result.append(element)
+        }
+    }
+    return result
+}
+
+// 하나로 대처하는 함수
+func filterEvenIndexElement<T>(_ array: [T]) -> [T] {
+    var result: [T] = []
+    for (offset, element) in array.enumerated() {
+        if offset % 2 == 0 {
+            result.append(element)
+        }
+    }
+    return result
+}
+
+// 하나로 대처하는 함수
+func filterEvenIndexNumericElement<T>(_ array: [T]) -> [T] where T: Numeric {
+    var result: [T] = []
+    for (offset, element) in array.enumerated() {
+        if offset % 2 == 0 {
+            result.append(element)
+        }
+    }
+    return result
+}
+
