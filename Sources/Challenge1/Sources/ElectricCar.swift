@@ -12,7 +12,7 @@ class ElectricEngine: Engine { }
 class ElectricCar: Car {
     override var engine: Engine {
         get {
-            return ElectricEngine(volume: super.engine.volume)
+            return ElectricEngine(volume: 800)
         }
         set { }
     }
