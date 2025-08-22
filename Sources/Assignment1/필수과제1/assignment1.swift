@@ -7,6 +7,7 @@
 
 import Foundation
 
+@MainActor
 let sum: (Int, Int) -> String = { a, b in
     let (total, isOverflow) = a.addingReportingOverflow(b)
     if isOverflow {
