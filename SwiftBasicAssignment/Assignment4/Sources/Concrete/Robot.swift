@@ -10,6 +10,7 @@ import Foundation
 public struct Robot: Introducible {
     public var name: String {
         willSet {
+            guard name != newValue else { return }
             print("name 변경 알림")
             print("변경 이전 값: \(name)")
             print("변경 이후 값: \(newValue)")
