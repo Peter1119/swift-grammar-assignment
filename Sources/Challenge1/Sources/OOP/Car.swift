@@ -7,21 +7,21 @@
 
 import Foundation
 
-public class Engine {
+class Engine {
     let volume: Int
     
-    public init(volume: Int) {
+    init(volume: Int) {
         self.volume = volume
     }
 }
 
-public class Car {
+class Car {
     let brand: String
     let model: String
     let year: Int
     var engine: Engine = Engine(volume: 1500)
     
-    public init(
+    init(
         brand: String,
         model: String,
         year: Int
@@ -31,15 +31,15 @@ public class Car {
         self.year = year
     }
     
-    public func drive() {
+    func drive() {
         print("Car 운전 중입니다.")
     }
     
-    public func parking() {
+    func parking() {
         print("Car 주차 중입니다.")
     }
 
-    public func refuel() {
+    func refuel() {
         print("Car 연료 주입 중입니다.")
     }
 }

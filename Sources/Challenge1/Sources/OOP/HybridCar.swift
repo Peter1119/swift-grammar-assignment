@@ -15,7 +15,7 @@ class HybridCar: Car {
         set { }
     }
     
-    public func switchEngine(to engine: Engine) {
+    func switchEngine(to engine: Engine) {
         print("현재 엔진 \(self.engine)")
         print("바뀌는 엔진 \(engine)")
         self.engine = engine
