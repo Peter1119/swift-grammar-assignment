@@ -12,10 +12,12 @@ let package = Package(
         .executable(name: "Assignment1", targets: ["Assignment1"]),
         .executable(name: "Assignment4", targets: ["Assignment4"]),
         .executable(name: "Assignment5", targets: ["Assignment5"]),
+        .executable(name: "Challenge4", targets: ["Challenge4"]),
     ],
     targets: [
         .executableTarget(name: "Assignment1", path: "Sources/Assignment1"),
         .executableTarget(name: "Assignment4", path: "Sources/Assignment4"),
         .executableTarget(name: "Assignment5", path: "Sources/Assignment5"),
+        .executableTarget(name: "Challenge4", path: "Sources/Challenge4"),
     ]
 )
