@@ -9,5 +9,5 @@ import Foundation
 
 protocol EngineSwitchable {
     var engine: Engine { get set }
-    mutating func switchEngine(to: Engine)
+    mutating func switchEngine(to newEngine: Engine)
 }
