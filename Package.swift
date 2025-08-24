@@ -12,7 +12,6 @@ let package = Package(
         .executable(name: "Assignment1", targets: ["Assignment1"]),
         .executable(name: "Assignment4", targets: ["Assignment4"]),
         .executable(name: "Assignment5", targets: ["Assignment5"]),
-        .executable(name: "Assignment5", targets: ["Assignment5"]),
         .executable(name: "Challenge2", targets: ["Challenge2"]),
     ],
     targets: [
