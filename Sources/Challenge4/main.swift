@@ -7,7 +7,7 @@
 import Foundation
 
 class A {
-    var b: B?
+    weak var b: B?
     
     deinit {
         print("A 객체가 deinit 되었습니다.")
@@ -16,7 +16,7 @@ class A {
 
 class B {
     var a: A?
-    
+    var closure: (() -> Void)?
     deinit {
         print("B 객체가 deinit 되었습니다.")
     }
@@ -28,6 +28,17 @@ var b: B? = B()
 a?.b = b
 b?.a = a
 
-a = nil
-b = nil
 
+//b?.closure = { [a] in
+//    print(a)
+//}
+
+
+b?.closure = { [a] in
+    print(a)
+}
+
+a = nil
+//b = nil
+
+print("테스트 종료")
