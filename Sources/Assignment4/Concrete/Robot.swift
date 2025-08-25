@@ -47,4 +47,8 @@ public struct Robot: Introducible {
             print("충전 중 오류가 발생했습니다. 다시 시도해주세요.")
         }
     }
+    
+    func introduce() -> String {
+        return "안녕하세요, 저는 \(name)입니다.\n로봇이죠"
+    }
 }
