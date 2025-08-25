@@ -15,6 +15,7 @@ let package = Package(
         .executable(name: "Challenge1-OOP", targets: ["Challenge1-OOP"]),
         .executable(name: "Challenge1-POP", targets: ["Challenge1-POP"]),
         .executable(name: "Challenge2", targets: ["Challenge2"]),
+        .executable(name: "Challenge4", targets: ["Challenge4"]),
     ],
     targets: [
         .executableTarget(name: "Assignment1-3", path: "Sources/Assignment1-3"),
@@ -29,5 +30,6 @@ let package = Package(
             path: "Sources/Challenge1/Sources/POP"
         ),
         .executableTarget(name: "Challenge2", path: "Sources/Challenge2"),
+        .executableTarget(name: "Challenge4", path: "Sources/Challenge4"),
     ]
 )
